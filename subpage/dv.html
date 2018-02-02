@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Data Visualization</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../reset.css">
+	<link rel="stylesheet" href="dv.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="dv.js"></script>
+
+
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="fullPage/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.js"></script>
+	<script src="fullPage/vendors/scrolloverflow.js"></script>
+	<script src="fullPage/jquery.fullpage.js"></script>
+	<script src="https://d3js.org/d3.v4.0.0-alpha.4.min.js"></script>
+
+</head>
+<body>
+	<div id="fullpage">
+		<div class="section active" id="section0">
+			<div class="intro">
+					<h3 style="margin-bottom:60px;">Frequncy of keys and clicks on my laptop</h3>
+				<h5 style="margin-bottom:30px;">Data Visualization EECE5642 Session 1</h5>
+
+				<h5>zhao.yuw@husky.neu.edu</h5>
+				<h5>Yuwei Zhao</5>
+				<h5>001797018</h5>
+				
+			</div>
+			<div class='jiantou'></div>
+		</div>
+
+		<div class="section" id="section1">
+		    <div class="slide" id="slide1" data-anchor="slide1" style="position:relative;">
+		    	<h5>Frequncy of keys in keyboard in one week</h5>
+				<div class="layout-scoreboard">
+			        <div class="dot-holder">
+			         	<div class="label"></div>	
+			            <div class="label"></div>	    
+			            <div class="label"></div>
+			            <div class="label"></div>
+			            <div class="label"></div>	
+			            <div class="label"></div>
+			            <div class="label"></div>
+			       
+			            <div class="pt Multi key1" style="left: 5%; bottom:37.25%;">88</div>
+			            <div class="pt Multi key2" style="left: 6.5%; bottom: 44.625%;">99</div>
+			            <div class="pt Single key3" style="left: 8%; bottom: 48.75%;">157</div>
+			            <div class="pt Single key4" style="left: 9.5%; bottom: 24.0625%;">190</div>
+			            <div class="pt Multi key5" style="left: 11%; bottom: 35.25%;">47</div>
+			            <div class="pt Multi key6" style="left: 12.5%; bottom: 36%;">91</div>
+			            <div class="pt Single key7" style="left: 14%; bottom: 29.9%;">94</div>
+			            <div class="pt Single key8" style="left: 15.5%; bottom: 20.9%;">37</div>
+			            <div class="pt Single key9" style="left: 17%; bottom: 18.1%;">28</div>
+			            <div class="pt Single key10" style="left: 18.5%; bottom: 21.3%;">38</div>
+			            <div class="pt Multi key11" style="left: 20%; bottom: 18.1%;">28</div>
+			            <div class="pt Multi key12" style="left: 21.5%; bottom: 14.3%;">16</div>
+			            <div class="pt Multi key13" style="left: 23%; bottom: 21.6%;">39</div>
+			            <div class="pt Single key14" style="left: 24.5%; bottom: 36.3%;">95</div>
+			            <div class="pt Multi key15" style="left: 26%; bottom: 38.6%;">109</div>
+			            <div class="pt Multi key16" style="left: 27.5%; bottom: 35.8%;">53</div>
+			            <div class="pt Multi key17" style="left: 29%; bottom: 21.6%;">39</div>
+			            <div class="pt Multi key18" style="left: 30.5%; bottom: 18.8%;">30</div>
+			            <div class="pt Single key19" style="left: 32%; bottom: 13.1%;">12</div>
+			            <div class="pt Multi key20" style="left: 33.5%; bottom: 62.6%;">505</div>
+			            <div class="pt Single key21" style="left: 35%; bottom: 37%;">98</div>
+			            <div class="pt Single key22" style="left: 36.5%; bottom: 85.9%;">1874</div>
+			            <div class="pt Multi key23" style="left: 38%; bottom: 67.1%;">685</div>
+			            <div class="pt Single key24" style="left: 39.5%; bottom: 51.7%;">240</div>
+			            <div class="pt Single key25" style="left: 41%; bottom: 56.3%;">351</div>
+			            <div class="pt Single key26" style="left: 42.5%; bottom: 8.8%;">7</div>
+			            <div class="pt Single key27" style="left: 44%; bottom: 51.4%;">234</div>
+			            <div class="pt Single key28" style="left: 45.5%; bottom: 68.8%;">752</div>
+			            <div class="pt Multi key29" style="left: 47%; bottom: 12.8%;">11</div>
+			            <div class="pt Multi key30" style="left: 48.5%; bottom: 73.1%;">922</div>
+			            <div class="pt Single key31" style="left: 50%; bottom: 18.8%;">30</div>
+			            <div class="pt Single key32" style="left: 51.5%; bottom: 50.9%;">221</div>
+			            <div class="pt Single key33" style="left: 53%; bottom: 1.3%;">1</div>
+			            <div class="pt Single key34" style="left: 54.5%; bottom: 3.8%;">3</div>
+			            <div class="pt Multi key35" style="left: 56%; bottom: 1.3%;">1</div>
+			            <div class="pt Multi key36" style="left: 57.5%; bottom: 50.4%;">209</div>
+			            <div class="pt Single key37" style="left: 59%; bottom: 43%;">186</div>
+			            <div class="pt Single key38" style="left: 60.5%; bottom: 15.9%;">21</div>
+			            <div class="pt Single key39" style="left: 62%; bottom: 61.6%;">478</div>
+			            <div class="pt Multi key40" style="left: 63.5%; bottom: 10%;">8</div>
+			            <div class="pt Multi key41" style="left: 65%; bottom: 14.4%;">16</div>
+			            <div class="pt Single key42" style="left: 66.5%; bottom: 27.5%;">60</div>
+			            <div class="pt Multi key43" style="left: 68%; bottom: 60%;">440</div>
+			            <div class="pt Single key44" style="left: 69.5%; bottom: 55.8%;">339</div>
+			            <div class="pt Single key45" style="left: 71%; bottom: 82.6%;">1605</div>
+			            <div class="pt Multi key46" style="left: 72.5%; bottom: 56%;">343</div>
+			            <div class="pt Multi key47" style="left: 74%; bottom: 55.9%;">342</div>
+			            <div class="pt Multi key48" style="left: 75.5%; bottom: 61.3%;">472</div>
+			            <div class="pt Single key49" style="left: 77%; bottom: 61.2%;">469</div>
+			            <div class="pt Multi key50" style="left: 78.5%; bottom: 50.4%;">209</div>
+			            <div class="pt Single key51" style="left: 80%; bottom: 13.1%;">q13</div>
+			            <div class="pt Multi key52" style="left: 81.5%; bottom: 55.8%;">340</div>
+			            <div class="pt Single key53" style="left: 83%; bottom: 55.8%;">338</div>
+			            <div class="pt Single key54" style="left: 84.5%; bottom: 22.5%;">42</div>
+			            <div class="pt Single key55" style="left: 86%; bottom: 76.4%;">1115</div>
+			            <div class="pt Multi key56" style="left: 87.5%; bottom: 75.2%;">1012</div>
+			            <div class="pt Single key57" style="left: 89%; bottom: 63.7%;">546</div>
+			            <div class="pt Multi key58" style="left: 90.5%; bottom: 44.2%;">154</div>
+			            <div class="pt Single key59" style="left: 91%; bottom: 50.4%;">209</div>
+			            <div class="pt Multi key60" style="left: 92.5%; bottom: 54.6%;">310</div>
+			            <div class="pt Single key61" style="left: 94%; bottom: 64.9%;">596</div>
+			            <div class="pt Multi key62" style="left: 95.5%; bottom: 39%;">112</div>
+			            <div class="pt Multi key63" style="left: 97%; bottom: 35.5%;">92</div>
+			            <div class="pt Single key64" style="left: 98.5%; bottom: 32.5%;">80</div>
+			            <div class="pt Single key65" style="left: 100%; bottom: 53.3%;">279</div>
+			         
+
+			         	
+			        </div>
+				    <div style="position:relative !important; width:100%;">
+						<div class="key" data-key="key1" style="left: 5%;">'</div>
+			            <div class="key" data-key="key2" style="left: 6.5%;">,</div>
+			            <div class="key" data-key="key3" style="left: 8%;">-</div>
+			            <div class="key" data-key="key4" style="left: 9.5%;">.</div>
+			            <div class="key" data-key="key5" style="left: 11%; ">/</div>
+			            <div class="key" data-key="key6" style="left: 12.5%; ">1</div>
+			            <div class="key" data-key="key7" style="left: 14%; ">2</div>
+			            <div class="key" data-key="key8" style="left: 15.5%; ">3</div>
+			            <div class="key" data-key="key9" style="left: 17%; ">4</div>
+			            <div class="key" data-key="key10" style="left: 18.5%; ">5</div>
+			            <div class="key" data-key="key11" style="left: 20%; ">6</div>
+			            <div class="key" data-key="key12" style="left: 21.5%;">7</div>
+			            <div class="key" data-key="key13" style="left: 23%; ">8</div>
+			            <div class="key" data-key="key14" style="left: 24.5%; ">9</div>
+			            <div class="key" data-key="key15" style="left: 26%; ">;</div>
+			            <div class="key" data-key="key16" style="left: 27.5%; ">=</div>
+			            <div class="key" data-key="key17" style="left: 29%; ">[</div>
+			            <div class="key" data-key="key18" style="left: 30.5%; ">\</div>
+			            <div class="key" data-key="key19" style="left: 32%; ">]</div>
+			            <div class="key" data-key="key20" style="left: 33.5%; ">A</div>
+			            <div class="key" data-key="key21" style="left: 35%;">B</div>
+			            <div class="key" data-key="key22" style="left: 36.5%; ">Backspace</div>
+			            <div class="key" data-key="key23" style="left: 38%; ">C</div>
+			            <div class="key" data-key="key24" style="left: 39.5%; ">Capslock</div>
+			            <div class="key" data-key="key25" style="left: 41%; ">D</div>
+			            <div class="key" data-key="key26" style="left: 42.5%; ">Delete</div>
+			            <div class="key" data-key="key27" style="left: 44%; ">Down</div>
+			            <div class="key" data-key="key28" style="left: 45.5%; ">E</div>
+			            <div class="key" data-key="key29" style="left: 47%; ">End</div>
+			            <div class="key" data-key="key30" style="left: 48.5%; ">Enter</div>
+			            <div class="key" data-key="key31" style="left: 50%; ">Escape</div>
+			            <div class="key" data-key="key32" style="left: 51.5%; ">F</div>
+			            <div class="key" data-key="key33" style="left: 53%; ">F12</div>
+			            <div class="key" data-key="key34" style="left: 54.5%; ">F2</div>
+			            <div class="key" data-key="key35" style="left: 56%; ">F5</div>
+			            <div class="key" data-key="key36" style="left: 57.5%; ">G</div>
+			            <div class="key" data-key="key37" style="left: 59%; ">H</div>
+			            <div class="key" data-key="key38" style="left: 60.5%; ">Home</div>
+			            <div class="key" data-key="key39" style="left: 62%; ">I</div>
+			            <div class="key" data-key="key40" style="left: 63.5%;">Insert</div>
+			            <div class="key" data-key="key41" style="left: 65%; ">J</div>
+			            <div class="key" data-key="key42" style="left: 66.5%; ">K</div>
+			            <div class="key" data-key="key43" style="left: 68%; ">L</div>
+			            <div class="key" data-key="key44" style="left: 69.5%; ">Left</div>
+			            <div class="key" data-key="key45" style="left: 71%; ">LeftControl</div>
+			            <div class="key" data-key="key46" style="left: 72.5%; ">LeftShift</div>
+			            <div class="key" data-key="key47" style="left: 74%; ">M</div>
+			            <div class="key" data-key="key48" style="left: 75.5%; ">N</div>
+			            <div class="key" data-key="key49" style="left: 77%; ">O</div>
+			            <div class="key" data-key="key50" style="left: 78.5%; ">P</div>
+			            <div class="key" data-key="key51" style="left: 80%; ">Q</div>
+			            <div class="key" data-key="key52" style="left: 81.5%; ">R</div>
+			            <div class="key" data-key="key53" style="left: 83%; ">Right</div>
+			            <div class="key" data-key="key54" style="left: 84.5%; ">RightControl</div>
+			            <div class="key" data-key="key55" style="left: 86%; ">S</div>
+			            <div class="key" data-key="key56" style="left: 87.5%; ">Space</div>
+			            <div class="key" data-key="key57" style="left: 89%;">T</div>
+			            <div class="key" data-key="key58" style="left: 90%; ">Tab</div>
+			            <div class="key" data-key="key59" style="left: 91%; ">U</div>
+			            <div class="key" data-key="key60" style="left: 92.5%; ">Up</div>
+			            <div class="key" data-key="key61" style="left: 94%; ">V</div>
+			            <div class="key" data-key="key62" style="left: 95.5%; ">W</div>
+			            <div class="key" data-key="key63" style="left: 97%; ">X</div>
+			            <div class="key" data-key="key64" style="left: 98.5%; ">Y</div>
+			            <div class="key" data-key="key65" style="left: 100%; ">Z</div>
+					</div>
+			        <div>
+			        	<button class='view-again btn left' style="margin-top:50px; z-index:100;">View Again</button>
+			        </div>
+
+			    </div>
+			</div>
+			<div class='jiantou'></div>
+		   
+		</div>
+		<div class="section" id="section2">
+			<div class="slide" id="slide2" data-anchor="slide2">
+			<h5 style="margin-bottom:50px;">Frequncy of keys in keyboard in one week</h5>
+				<div class='keyboard-img'></div>
+				<div class='k-holder'>
+					<div class="k1 left"></div>
+					<div class="k2 left"></div>
+					<div class="k3 left"></div>
+					<div class="k4 left"></div>
+					<div class="k5 left"></div>
+					<div class="k6 left"></div>
+					<div class="k7 left"></div>
+					<div class="k8 left"></div>
+					<div class="k9 left"></div>
+					<div class="k10 left"></div>
+					<div class="k11 left"></div>
+					<div class="k12 left"></div>
+				</div>
+			</div>
+				
+
+			<div class="slide" id="slide4" data-anchor="slide4">
+			<h5 style="margin-bottom:50px;">Frequncy of keys and clicks on applications</h5>
+				<div class='img2'></div>
+			</div>
+
+			<div class="slide" id="slide6" data-anchor="slide6" style="position:relative;">
+				<div class="compare"></div>
+			</div>
+			<div class='jiantou'></div>
+		</div>
+		<div class="section" id="section3">
+			<div class="slide" id="slide5" data-anchor="slide5">
+				<h5 style="margin-bottom:50px;">Frequncy of mouse click in one week</h5>
+				<div class='img3'></div>
+			</div>
+
+			<div class="slide" id="slide14" data-anchor="slide14">
+				<div class="img-holder">
+					<div class="img-1"></div>
+					<div class="img-2"></div>
+					<div class="img-3"></div>
+					<div class="img-4"></div>
+				</div>
+			</div>
+
+
+			<div class="slide" id="slide3" data-anchor="slide3">
+			<h5 style="margin-bottom:50px;">Frequncy of mouse click in one week</h5>
+				<div class='img1'></div>
+			</div>	
+			<div class='jiantou'></div>
+		</div>
+		<div class="section" id="section2">
+			<div>
+			<h3 style="margin-bottom:50px;">Tools and Refrence</h3>
+			<h5 class='left-align' style="margin-left:10%;">
+				language/script:
+			</h5>
+			
+				<h5 class='left-align' style="margin-left:20%;">JavaScript/HTML/CSS/</h5>
+		
+			<h5 class='left-align' style="margin-left:10%;">
+				tools:
+			</h5>
+		
+				<h5 class='left-align' style="margin-left:20%;">whatpulse <em>https://whatpulse.org/</em></h5>
+		
+			<h5 class='left-align' style="margin-left:10%;">
+				plugins:
+			</h5>
+		
+			<h5 class='left-align' style="margin-left:20%;">bootstrap <em>https://github.com/twbs/bootstrap</em></h5>
+			<h5 class='left-align' style="margin-left:20%;">FullPage.js <em>https://github.com/alvarotrigo/fullPage.js</em></h5>
+			<h5 class='left-align' style="margin-left:20%;">scatter-plot <em>https://github.com/jessekorzan/scatter-plot</em></h5>
+				
+				
+		<div class='jiantou'></div>
+			</div>
+			<div class='jiantou'></div>
+		</div>
+		<div class="section" id="section4">
+			<h1 class="message-text">QUESTION?</h1>
+		</div>
+		
+	</div>
+
+</body>
+
+</html>
+function cal(num) {if(num>0 &&num<10){return  (num)/10 *12.5;}if(num>10 &&num<50){return 12.5 + (num -10)/40 *12.5;}if(num>50 &&num<100){return 25 + (num -50)/50 *12.5;}if(num>100 &&num<200){return 37.5 + (num -100)/100 *12.5;}if(num>200 &&num<500){return 50 + (num -200)/300 *12.5;}if(num>500 &&num<1000){return 62.5 + (num -500)/500 *12.5;}if(num>1000 &&num<2000){return 75 + (num -1000)/1000 *12.5;}}
+
+

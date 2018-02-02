@@ -1,0 +1,28 @@
+body {
+  background-image: url(images/bg.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+header {
+  width: 100%;
+  height: 100px; }
+  header .header_first_line, header .header_second_line {
+    text-align: center; }
+
+.navigator {
+  background-color: initial !important; }
+  .navigator a {
+    color: #fff !important; }
+
+.btn-view-folder {
+  text-align: center; }
+
+.card-content-1 {
+  min-height: 63px;
+  display: flex; }
+  .card-content-1 p {
+    align-self: center; }
+
+/*# sourceMappingURL=happy_hut.css.map */

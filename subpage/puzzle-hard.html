@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+
+	<style>
+	#count{
+		display: block;
+		width: 100px;
+		margin:30px auto;
+	}
+	*{
+		margin:0;
+		padding:0;
+	}
+	img{
+		border:none;
+	}
+	.wrapper{
+		width: 800px;
+		margin: 50px auto;
+	}
+		.wrapper div{
+			width: 12%;
+			height: 0;
+			padding-bottom: 12%;
+
+/*			height: 180px;*/
+			background-color: white;
+/*			margin: 0.5px 0.5px;*/
+			float: left;
+
+		}
+		.wrapper img{
+			width: 100%;
+		}
+
+
+	.btn-wrapper{
+		width: 310px;
+		margin: 100px auto;
+	}
+	.clearfix:after{
+	content: '';
+	display: block;
+	clear:both;
+     }
+	#left,#up,#right,#down{
+		width:100px;
+		height: 60px;
+		background-color: red;
+	}
+	#up{
+		transform:translateY(-60px);
+	}
+	#down{
+		transform:translateX(105px);
+		}
+	@media screen and (min-width:860px) {
+
+		#left,#up,#right,#down{
+			display: none;
+		}
+	}
+@media screen and (max-width:460px) {
+	.wrapper{
+		width: 350px;
+		margin: 50px auto;
+	}
+		}
+
+	.hint {
+		width: 300px;
+		margin:0 auto;
+	}
+	</style>
+</head>
+<body>
+<span id="count">Count:</span>
+	<div class="wrapper clearfix">
+		<div><img id="cell-1-1" src="images3/seasons_10.jpg" alt=""></div>
+		<div><img id="cell-1-2" src="images3/seasons_18.jpg" alt=""></div>
+		<div><img id="cell-1-3" src="images3/seasons_22.jpg" alt=""></div>
+		<div><img id="cell-1-4" src="images3/seasons_14.jpg" alt=""></div>
+		<div><img id="cell-1-5" src="images3/seasons_23.jpg" alt=""></div>
+		<div><img id="cell-1-6" src="images3/seasons_06.jpg" alt=""></div>
+		<div><img id="cell-1-7" src="images3/seasons_05.jpg" alt=""></div>
+		<div><img id="cell-1-8" src="images3/seasons_04.jpg" alt=""></div>
+
+		<div><img id="cell-2-1" src="images3/seasons_17.jpg" alt=""></div>
+		<div><img id="cell-2-2" src="images3/seasons_16.jpg" alt=""></div>
+		<div><img id="cell-2-3" src="images3/seasons_12.jpg" alt=""></div>
+		<div><img id="cell-2-4" src="images3/seasons_24.jpg" alt=""></div>
+		<div><img id="cell-2-5" src="images3/seasons_09.jpg" alt=""></div>
+		<div><img id="cell-2-6" src="images3/seasons_01.jpg" alt=""></div>
+		<div><img id="cell-2-7" src="images3/seasons_03.jpg" alt=""></div>
+		<div><img id="cell-2-8" src="images3/seasons_02.jpg" alt=""></div>
+
+		<div><img id="cell-3-1" src="images3/seasons_21.jpg" alt=""></div>
+		<div><img id="cell-3-2" src="images3/seasons_27.jpg" alt=""></div>
+		<div><img id="cell-3-3" src="images3/seasons_11.jpg" alt=""></div>
+		<div><img id="cell-3-4" src="images3/seasons_26.jpg" alt=""></div>
+		<div><img id="cell-3-5" src="images3/seasons_15.jpg" alt=""></div>
+		<div><img id="cell-3-6" src="images3/seasons_25.jpg" alt=""></div>
+		<div><img id="cell-3-7" src="images3/seasons_31.jpg" alt=""></div>
+		<div><img id="cell-3-8" src="images3/seasons_29.jpg" alt=""></div>
+
+		<div><img id="cell-4-1" src="images3/seasons_13.jpg" alt=""></div>
+		<div><img id="cell-4-2" src="images3/seasons_19.jpg" alt=""></div>
+		<div><img id="cell-4-3" src="images3/seasons_08.jpg" alt=""></div>
+		<div><img id="cell-4-4" src="images3/seasons_07.jpg" alt=""></div>
+		<div><img id="cell-4-5" src="images3/seasons_28.jpg" alt=""></div>
+		<div><img id="cell-4-6" src="images3/seasons_30.jpg" alt=""></div>
+		<div><img id="cell-4-7" src="images3/seasons_20.jpg" alt=""></div>
+		<div><img id="cell-4-8" src="" alt=""></div>
+	</div>
+
+<div class="hint"> USE LEFT/UP/RIGHT/DOWN KEY <a href="seasons.html" target="_blank"> Hint</a>	</div>
+<div class="btn-wrapper">
+		<button id="left">left</button>
+		<button id="up">up</button>
+		<button id="right">right</button>
+		<button id="down">down</button>
+</div>
+
+
+<!-- 
+	<div id="show">sss</div> -->
+
+<script type="text/javascript">
+	    var a = 4; // Row
+	    var b = 8; // Col
+	    var n;
+	    var count = 0;
+	    // document.getElementById("show").innerHTML= "a = "+a+" b = "+b;
+
+	    function showkey(){
+	        key = event.keyCode;
+	        event.preventDefault();
+	         count++;
+	        if (key == 37 ) {
+	        	left();
+	        	document.getElementById('count').innerHTML = "Count: "+count;
+	        };
+
+	        if (key == 38 ) {
+	        	document.getElementById('count').innerHTML = "Count: "+count;
+	        	up();
+	        };
+	        if (key == 39 ) {
+	        	document.getElementById('count').innerHTML = "Count: "+count;
+	        	right();
+	        };
+	        if (key == 40 ) {
+	        	document.getElementById('count').innerHTML = "Count: "+count;
+	        	down();
+	        };
+   		}
+    document.onkeydown= showkey;
+
+     document.getElementById("left").addEventListener("click", left);
+	   function left(){
+	   if (b < 8) {
+	            n = b;
+	        	b = b + 1;
+	        	document.getElementById("cell-"+a+"-"+n).src = document.getElementById("cell-"+a+"-"+b).src ;
+	        	document.getElementById("cell-"+a+"-"+b).src = "images/space.jpg";
+	        };
+	   }
+
+        document.getElementById("up").addEventListener("click", up);
+	   function up(){
+	   if (a < 4) {
+	        	n = a;
+	        	a = a + 1;
+
+	        	document.getElementById("cell-"+n+"-"+b).src = document.getElementById("cell-"+a+"-"+b).src ;
+	        	document.getElementById("cell-"+a+"-"+b).src = "images/space.jpg";
+	        };
+	   }
+
+	   document.getElementById("right").addEventListener("click", right);
+	   function right(){
+	   if (b > 1) {
+	            n = b;
+	        	b = b - 1;
+
+	        	document.getElementById("cell-"+a+"-"+n).src = document.getElementById("cell-"+a+"-"+b).src ;
+	        	document.getElementById("cell-"+a+"-"+b).src = "images/space.jpg";
+	        };
+	   }
+
+
+	   document.getElementById("down").addEventListener("click", down);
+	   function down(){
+	   if (a > 1) {
+	        	n = a;
+	        	a = a - 1;
+	        	document.getElementById("cell-"+n+"-"+b).src = document.getElementById("cell-"+a+"-"+b).src ;
+	        	document.getElementById("cell-"+a+"-"+b).src = "images/space.jpg";
+	        };
+	   }
+
+</script>
+
+</body>
+</html>
